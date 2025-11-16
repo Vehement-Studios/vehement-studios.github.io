@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehement — Technology</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html">Home</a>
+  <a href="features.html">Features</a>
+  <a href="world.html">World</a>
+</nav>
+
+<section class="content">
+  <h2>Technology Stack</h2>
+  <p>
+    Vehement is built with modern, scalable, and high-performance technology across both the game client and backend ecosystem.
+  </p>
+
+  <hr>
+
+  <h3>🎮 Client Technology (Unreal Engine 5.6)</h3>
+  <p>
+    The main game client is a multi-module Unreal Engine 5.6 source build including:
+  </p>
+  <ul>
+    <li>Vehement (main module)</li>
+    <li>VehementCore (shared systems)</li>
+    <li>VehementPersistence (world save logic)</li>
+    <li>VehementEditor (custom editor tools)</li>
+  </ul>
+
+  <p>Key systems:</p>
+  <ul>
+    <li>Gameplay Ability System Integration</li>
+    <li>DataTables + JSON-driven registries</li>
+    <li>Custom Gameplay Tags architecture</li>
+    <li>World event system (“Heart Pulses”)</li>
+    <li>Dynamic zone shapes (Circle, Box, PolyZone)</li>
+  </ul>
+
+  <h3>🖥️ Backend (C# / .NET 8 Microservices)</h3>
+  <p>
+    The Vehement backend is a modular microservice architecture designed for scale, clarity, and resilience.
+  </p>
+
+  <h4>Core Services</h4>
+  <ul>
+    <li><strong>AuthService</strong> — accounts, tokens, IP + HWID tracking</li>
+    <li><strong>SocialService</strong> — friends, guilds, interactions</li>
+    <li><strong>LFGService</strong> — party finder, group matching</li>
+    <li><strong>MatchmakingService</strong> — PvP/PvE match queues</li>
+    <li><strong>InventoryService</strong> — items, loadouts, storage</li>
+    <li><strong>PersistenceService</strong> — world state & shard logic</li>
+    <li><strong>LoggingService</strong> — MongoDB structured logs</li>
+  </ul>
+
+  <h3>📡 API Gateway</h3>
+  <p>
+    A single point of entry for the client, providing:
+  </p>
+  <ul>
+    <li>JWT validation</li>
+    <li>Rate limiting</li>
+    <li>Reverse proxy routing</li>
+    <li>Centralized logging</li>
+    <li>Circuit breaking</li>
+    <li>Error normalization</li>
+  </ul>
+
+  <h3>🗄️ Databases</h3>
+  <p>
+    Vehement uses a hybrid data approach:
+  </p>
+  <ul>
+    <li><strong>PostgreSQL Shards</strong> — accounts, characters, items</li>
+    <li><strong>MongoDB</strong> — logging, event records, analytics</li>
+    <li><strong>Redis</strong> — matchmaking queues & caching</li>
+  </ul>
+
+  <h3>🐋 Deployment</h3>
+  <p>
+    Fully containerized for scalable cloud deployment:
+  </p>
+  <ul>
+    <li>Docker + docker-compose</li>
+    <li>Kubernetes (future)</li>
+    <li>AWS or Neon.tech Postgres clusters</li>
+    <li>CI/CD via GitHub Actions</li>
+  </ul>
+
+  <h3>🧰 Developer Experience</h3>
+  <ul>
+    <li>Git LFS for assets</li>
+    <li>GitHub submodules for engine modules</li>
+    <li>Automated build scripts</li>
+    <li>Python-powered bootstrap tool</li>
+    <li>Standardized logs (JSON structured)</li>
+  </ul>
+
+</section>
+
+<footer>
+  <p>© Vehement Studios</p>
+</footer>
+
+</body>
+</html>
